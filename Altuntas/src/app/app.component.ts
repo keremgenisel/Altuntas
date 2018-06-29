@@ -9,7 +9,7 @@ import { Sale } from './Sale';
 })
 export class AppComponent {
   constructor(private http: HttpClient) { }
-  title = 'app';
+  title = 'Altuntas';
   sales: Sale[] = [];
   ngOnInit(): void {
     this.http.get("https://localhost:44375/api/sales").subscribe(data => {
